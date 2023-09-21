@@ -128,3 +128,51 @@ hr{
     border-radius: 15px;
     padding: 5px 10px;
 }
+
+
+/* -----------------
+-----Media Quaries--
+------------------- */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        justify-items: center; 
+    }
+    .course{
+        margin-top: 20px;
+    }
+    .player{
+        gap: 0px;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .players{
+        margin-left: 50px;
+    } 
+    .courses{
+        grid-column-gap: 0px;
+        justify-items: center; 
+    }
+    .course{
+        margin-top: 20px;
+    }
+}
