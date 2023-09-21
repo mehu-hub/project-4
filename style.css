@@ -14,13 +14,17 @@ main{
 }
 
 /* Top player style */
+.top-players{
+    margin-bottom: 30px;
+}
 .section-title{
     font-size: 24px;
     color: #562EFF;
+    margin-top: 3px;
 }
 .players{
     grid-row-gap: 29px;
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(3, 1fr);
 }
 .player{
@@ -28,7 +32,16 @@ main{
     gap: 16px;
     align-items: center;
 }
+.player-name{
+    font-size: 18px;
+    font-weight: 500;
+}
 .player img{
     width: 56px;
     height: 56px;
+}
+
+/* HR line */
+hr{
+    border: 1px solid rgb(184, 184, 184);
 }
